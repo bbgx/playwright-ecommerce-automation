@@ -20,6 +20,7 @@ export default defineConfig({
   reporter: [['html'], ['allure-playwright']],
   use: {
     trace: 'on-first-retry',
+    testIdAttribute: 'data-test',
   },
 
   projects: [
