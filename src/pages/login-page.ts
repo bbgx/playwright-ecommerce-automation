@@ -1,4 +1,4 @@
-import { expect, type Locator, type Page } from "@playwright/test";
+import { expect, type Locator, type Page } from '@playwright/test';
 
 export class LoginPage {
   readonly page: Page;
@@ -17,7 +17,7 @@ export class LoginPage {
     await this.usernameField.fill('standard_user');
     await this.passwordField.fill('secret_sauce');
     await this.loginButton.click();
-    
+
     await expect(this.page.getByTestId('inventory-list')).toBeVisible();
   }
 }
