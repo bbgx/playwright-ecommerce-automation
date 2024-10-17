@@ -1,7 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { menuLink } from './fixtures/navigation.json';
-import { LoginPage } from '../pages/login-page';
-import { CommonPage } from '../pages/common-page';
+import { LoginPage, CommonPage } from '../pages';
 
 test.describe('Test navigation side menu scenarios.', () => {
   let loginPage: LoginPage;

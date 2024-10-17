@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { users } from './fixtures/users.json';
-import { LoginPage } from '../pages/login-page';
+import { LoginPage } from '../pages';
 
 test.describe('Test application login scenarios', () => {
   let loginPage: LoginPage;
